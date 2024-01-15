@@ -24,6 +24,13 @@
     margin: 20px 0;
 }
 
+.text-color-gray {
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 20px 0 0;
+}
+
 /* css  for website  */
 
 /* header styles */
@@ -74,38 +81,8 @@ nav li a {
     color: #131313;
 }
 
-.banner-description {
-    color: #727272;
-    font-size: 1rem;
-    font-weight: 400;
-}
-
 .banner img {
     width: 100%;
-}
-
-/* media queries styles */
-
-@media screen and (max-width: 576px) {
-    header {
-        padding: 20px;
-    }
-
-    nav {
-        flex-direction: column;
-    }
-}
-
-/* responsive for tablet or medium device */
-
-@media screen and (min-width: 576px) and (max-width: 960px) {
-    header {
-        padding: 50px;
-    }
-
-    nav {
-        flex-direction: column;
-    }
 }
 
 /* main section styles  */
@@ -121,14 +98,13 @@ main {
 }
 
 .teams-img {
-    background-color: red;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
 }
 
 .teams-img img {
-    max-width: 250px;
+    width: 250px;
 }
 
 .teams-content {
@@ -136,26 +112,59 @@ main {
 }
 
 #list {
-    color: #737373;
-    font-size: 2rem;
+    color: #727272;
+    font-size: 2.8rem;
     font-weight: 500;
 }
 
 #our {
     color: #131313;
-    font-size: 2rem;
+    font-size: 2.8rem;
     font-weight: 700;
 }
 
 #feature {
     color: #FF900E;
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 2.8rem;
 }
 
-.feature-content {
-    color: #727272;
-    font-weight: 400;
-    line-height: 26px;
-    margin-top: 20px;
+
+/* media queries styles */
+
+@media screen and (max-width: 576px) {
+    header {
+        padding: 20px;
+    }
+
+    nav,
+    .main-feature {
+        flex-direction: column;
+    }
+
+    .teams-img {
+        grid-template-columns: 1fr;
+    }
+
+    .teams-content {
+        padding: 30px;
+        text-align: justify;
+    }
+}
+
+/* responsive for tablet or medium device */
+
+@media screen and (min-width: 576px) and (max-width: 960px) {
+    header {
+        padding: 50px;
+    }
+
+    nav,
+    .main-feature {
+        flex-direction: column;
+    }
+
+    .teams-img {
+        grid-template-columns: 1fr;
+    }
 }
