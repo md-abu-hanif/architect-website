@@ -182,9 +182,10 @@ main {
         text-align: justify;
     }
 
-    .card {
-        margin-bottom: 30px;
+    .card-container {
+        gap: 30px;
     }
+    
 }
 
 /* responsive for tablet or medium device */
@@ -210,9 +211,6 @@ main {
     .card-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-    }
-
-    .card {
-        margin-bottom: 30px;
+        gap: 30px;
     }
 }
