@@ -35,6 +35,7 @@
 section {
     padding: 30px;
 }
+
 /* css  for website  */
 
 /* header styles */
@@ -148,17 +149,28 @@ main {
     border-radius: 8px;
     border: 1px solid #FF900E;
 }
+
 .card-satus {
     color: #424242;
     font-size: 2.8rem;
     font-weight: 600;
 }
+
 .card-title {
     font-size: 1.2rem;
     font-weight: 600;
-    margin:0 0 15px;
+    margin: 0 0 15px;
 }
 
+.sponsor {
+    text-align: center;
+}
+
+.sponsor-img {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 35px;
+}
 
 /* media queries styles */
 
@@ -168,8 +180,9 @@ main {
     }
 
     nav,
-    .main-feature, 
-    .card-container {
+    .main-feature,
+    .card-container,
+    .sponsor-img {
         flex-direction: column;
     }
 
@@ -182,10 +195,11 @@ main {
         text-align: justify;
     }
 
-    .card-container {
+    .card-container,
+    .sponsor-img {
         gap: 30px;
     }
-    
+
 }
 
 /* responsive for tablet or medium device */
@@ -208,7 +222,8 @@ main {
         width: 450px;
     }
 
-    .card-container {
+    .card-container,
+    .sponsor-img {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
