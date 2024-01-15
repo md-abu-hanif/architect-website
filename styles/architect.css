@@ -31,6 +31,10 @@
     padding: 20px 0 0;
 }
 
+
+section {
+    padding: 30px;
+}
 /* css  for website  */
 
 /* header styles */
@@ -39,7 +43,7 @@ header {
     padding: 50px 240px;
 }
 
-.nav-title {
+.website-title {
     color: #131313;
     font-size: 3rem;
     font-weight: 700;
@@ -93,6 +97,7 @@ main {
 }
 
 .main-feature {
+    margin-bottom: 60px;
     display: flex;
     align-items: center;
 }
@@ -129,6 +134,31 @@ main {
     font-size: 2.8rem;
 }
 
+/* features card css */
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.card {
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+}
+.card-satus {
+    color: #424242;
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+.card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin:0 0 15px;
+}
+
 
 /* media queries styles */
 
@@ -138,7 +168,8 @@ main {
     }
 
     nav,
-    .main-feature {
+    .main-feature, 
+    .card-container {
         flex-direction: column;
     }
 
@@ -149,6 +180,10 @@ main {
     .teams-content {
         padding: 30px;
         text-align: justify;
+    }
+
+    .card {
+        margin-bottom: 30px;
     }
 }
 
@@ -170,5 +205,14 @@ main {
 
     .teams-img img {
         width: 450px;
+    }
+
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card {
+        margin-bottom: 30px;
     }
 }
