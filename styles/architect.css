@@ -167,4 +167,8 @@ main {
     .teams-img {
         grid-template-columns: 1fr;
     }
+
+    .teams-img img {
+        width: 450px;
+    }
 }
